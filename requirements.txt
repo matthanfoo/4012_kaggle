@@ -1,0 +1,16 @@
+# Core: both notebooks
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+matplotlib>=3.7
+lightgbm==4.6.0        # the submitted files were built with 4.6.0 (deterministic=True)
+
+# Full notebook only (4012_combined_full.ipynb)
+networkx>=3.0          # Louvain communities (Steps 5c-6, 30b)
+xgboost>=2.0           # learner screen (Step 9)
+catboost>=1.2          # CatBoost Logloss / PairLogit (Step 16)
+torch>=2.0             # MLP and GraphSAGE (Step 28e); install a CUDA build for GPU
+
+# Optional: running locally in Jupyter instead of Colab
+# jupyter>=1.0
